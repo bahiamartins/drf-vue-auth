@@ -1,0 +1,19 @@
+{% load i18n %}
+<p><font color="#333333" face="Arial" size="2">
+        {% trans "Seja bem vindo(a) à" %} {{ site_name }}.
+</font></p>
+<p><font color="#333333" face="Arial" size="2">
+        {% trans "Você tem 1 dia para ativar sua conta" %}.
+</font></p>
+<p><font color="#333333" face="Arial" size="2">
+
+        <a href="{{linkFront}}" style="color: #ffffff;background-color: #5bb75b;;text-decoration:none;border-color: #51a351 #51a351 #387038;padding: 5px 12px;font-size: 12px;line-height: 20px;cursor:pointer;text-align: center; *margin-left: .3em; display:inline" alt="">
+                {{ linkFront }}
+        </a>
+        {% comment %}
+        <a href="http://{{ domain }}{% url 'UserActivateAccount' uidb64=uid  token=token %}" style="color: #ffffff;background-color: #5bb75b;;text-decoration:none;border-color: #51a351 #51a351 #387038;padding: 5px 12px;font-size: 12px;line-height: 20px;cursor:pointer;text-align: center; *margin-left: .3em; display:inline" alt="">
+                {{ domain }}{% url 'UserActivateAccount' uidb64=uid token=token %}
+        </a>
+        {% endcomment %}   
+</font></p>
+            

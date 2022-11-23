@@ -1,0 +1,18 @@
+{% load i18n %}
+<table style="max-width:600px;">
+    <tr>
+        <td align="left" style="padding:20px;border-bottom:1px #ccc solid;">
+            <p><font color="#333333" face="Arial" size="2">{% trans "Olá" %} {{ first_name }},</font></p>
+            <p><font color="#333333" face="Arial" size="2">
+            {{ message }}
+            </font></p>
+            <p><font color="#333333" face="Arial" size="2">{% trans "Atenciosamente" %},</font>
+            <p><font color="#333333" face="Arial" size="2">{% trans "Equipe" %} {{ company }}</font>
+        </td>
+    </tr>
+    <tr>
+        <td align="left" style="padding:5px 0 0 20px;">
+            <font color="#333333" face="Arial" size="1"><i>*{% trans "Esta é uma mensagem automática. Não responda por favor" %}</i></font>
+        </td>
+    </tr>
+</table>
